@@ -4,9 +4,14 @@ function App() {
 
   return (
     <div>
-      <Header></Header>
-      </div>
-  )
+      <main>
+        <Header></Header>
+        <section id="experience-info">
+          <h2>My coding experience</h2>
+        </section>
+      </main>
+    </div>
+  );
 }
 
 export default App
