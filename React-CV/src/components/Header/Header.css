@@ -1,0 +1,16 @@
+header h1 {
+  margin: 0;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 5rem;
+  background: linear-gradient(45deg, #1171cb, #2575fc); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.4));
+}
+
+header p {
+  margin: 0;
+  font-size: 1.25rem;
+  color: #000000; 
+  font-family: "Roboto Condensed", sans-serif;
+}
