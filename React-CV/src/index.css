@@ -1,12 +1,19 @@
 header {
   text-align: center;
-  margin: 3rem 0;
+  margin: 3rem
 }
+
 
 main {
   width: 90%;
   max-width: 50rem;
   margin: auto;
+}
+
+#experience-info {
+  padding: 2rem;
+  border-radius: 6px;
+  background: linear-gradient(45deg, #7d9cb7, #505660); 
 }
 
 main h2 {
@@ -16,8 +23,31 @@ main h2 {
   color: #000000;
 }
 
-#experience-info{
-  padding: 2rem;
-  border-radius: 6px;
-  background: linear-gradient(45deg, #7d9cb7, #505660); 
+#experience-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#experience-info li {
+  width: 10rem;
+  text-align: center;
+}
+
+#experience-info li img {
+  height: 4rem;
+  width: 6rem;
+  object-fit: cover;
+}
+
+#experience-info li h3 {
+  margin: 0.5rem 0;
+}
+
+#experience-info li p {
+  font-size: 0.9rem;
 }
