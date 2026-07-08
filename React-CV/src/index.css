@@ -3,11 +3,16 @@ header {
   margin: 3rem
 }
 
-
 main {
   width: 90%;
   max-width: 50rem;
   margin: auto;
+}
+
+.componentsImg {
+  width: 180px;
+  height: 100px;
+  object-fit: scale-down;
 }
 
 #experience-info {
@@ -36,12 +41,6 @@ main h2 {
 #experience-info li {
   width: 10rem;
   text-align: center;
-}
-
-#experience-info li img {
-  height: 4rem;
-  width: 6rem;
-  object-fit: cover;
 }
 
 #experience-info li h3 {
