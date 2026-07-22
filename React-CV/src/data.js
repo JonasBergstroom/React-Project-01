@@ -6,21 +6,21 @@ export const CORE_CONCEPTS = [
   {
     image: componentsImg1,
     title: "2019",
-    description: "info1",
+    description: "Programming 1",
   },
   {
     image: componentsImg2,
-    title: "2020",
-    description: "info2",
+    title: "2020 - 2022",
+    description: "Higher Vocational Education",
   },
   {
     image: componentsImg3,
     title: "2021",
-    description: "info3",
+    description: "Internship",
   },
   {
     image: componentsImg4,
-    title: "2022",
-    description: "info4",
+    title: "2022 - 2023",
+    description: "iOS Developer",
   },
 ];
