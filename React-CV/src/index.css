@@ -50,3 +50,48 @@ main h2 {
 #experience-info li p {
   font-size: 0.9rem;
 }
+
+#experience-info menu {
+  margin: 1rem 0;
+  padding: 0;
+  display: flex;
+  gap: 0.5rem;
+  list-style: none;
+}
+
+#experience-info menu button {
+  padding: 0.5rem 1rem;
+  border: saddlebrown;
+  border-radius: 6px;
+  background-color: linear-gradient(45deg, #7d9cb7, #505660);
+  color: linear-gradient(45deg, #7d9cb7, #505660);
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+#experience-info menu button:hover {
+  background-color: #2575fc;
+  color: #ebe7ef;
+}
+
+#experience-info menu button.active {
+  background-color: #7925d3;
+  color: #ebe7ef;
+}
+
+#tab-content {
+  padding: 1rem;
+  border-radius: 6px;
+  background: linear-gradient(45deg, #7d9cb7, #505660); 
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+#tab-content h3 {
+  margin: 0;
+}
+
+#tab-content code {
+  font-size: 1rem;
+}
