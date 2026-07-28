@@ -26,6 +26,10 @@ function App() {
             <TabButton>2021</TabButton>
             <TabButton>2022</TabButton>
           </menu>
+          <div id="tab-content">
+            <h3>Headline</h3>
+            <p>Information</p>
+          </div>
         </section>
       </main>
     </div>
