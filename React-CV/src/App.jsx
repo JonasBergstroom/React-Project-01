@@ -5,7 +5,10 @@ import TabButton from "./components/TabButton";
 
 
 function App() {
-
+  function handleClick() {
+      console.log("Test click event");
+    }
+  
   return (
     <div>
       <Header></Header>
@@ -21,10 +24,10 @@ function App() {
             ))}
           </ul>
           <menu style={{ marginTop: "3rem" }}>
-            <TabButton>2019</TabButton>
-            <TabButton>2020</TabButton>
-            <TabButton>2021</TabButton>
-            <TabButton>2022</TabButton>
+            <TabButton onClick={handleClick}>2019</TabButton>
+            <TabButton onClick={handleClick}>2020</TabButton>
+            <TabButton onClick={handleClick}>2021</TabButton>
+            <TabButton onClick={handleClick}>2022</TabButton>
           </menu>
           <div id="tab-content">
             <h3>Headline</h3>
