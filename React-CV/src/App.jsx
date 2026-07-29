@@ -5,9 +5,9 @@ import TabButton from "./components/TabButton";
 
 
 function App() {
-  function handleClick() {
-      console.log("Test click event");
-    }
+  function handleSelect(selectedButton) {
+    console.log(selectedButton);
+  }
   
   return (
     <div>
@@ -24,10 +24,18 @@ function App() {
             ))}
           </ul>
           <menu style={{ marginTop: "3rem" }}>
-            <TabButton onClick={handleClick}>2019</TabButton>
-            <TabButton onClick={handleClick}>2020</TabButton>
-            <TabButton onClick={handleClick}>2021</TabButton>
-            <TabButton onClick={handleClick}>2022</TabButton>
+            <TabButton onSelect={() => handleSelect("2019")}>
+              2019
+            </TabButton>
+            <TabButton onSelect={() => handleSelect("2020")}>
+              2020
+            </TabButton>
+            <TabButton onSelect={() => handleSelect("2021")}>
+              2021
+            </TabButton>
+            <TabButton onSelect={() => handleSelect("2022")}>
+              2022
+            </TabButton>
           </menu>
           <div id="tab-content">
             <h3>Headline</h3>
