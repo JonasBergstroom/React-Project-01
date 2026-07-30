@@ -2,11 +2,13 @@ import Header from "./components/Header/Header"
 import { CORE_CONCEPTS } from "./data.js";
 import CoreConcept from "./components/CoreConcept.jsx";
 import TabButton from "./components/TabButton";
-
+import { useState } from "react";
 
 function App() {
+  const [selectedYear, setselectedYear] = useState('test')
+  
   function handleSelect(selectedButton) {
-    console.log(selectedButton);
+    setselectedYear(selectedButton);
   }
   
   return (
