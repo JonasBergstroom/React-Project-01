@@ -3,14 +3,14 @@ import { CORE_CONCEPTS } from "./data.js";
 import CoreConcept from "./components/CoreConcept.jsx";
 import TabButton from "./components/TabButton";
 import { useState } from "react";
+import { TAB_CONTENT } from "./data.js";
 
 function App() {
-  const [selectedYear, setselectedYear] = useState('test')
+  const [selectedYear, setselectedYear] = useState("firstTab")
   
   function handleSelect(selectedButton) {
     setselectedYear(selectedButton);
   }
-  
   return (
     <div>
       <Header></Header>
@@ -26,22 +26,22 @@ function App() {
             ))}
           </ul>
           <menu style={{ marginTop: "3rem" }}>
-            <TabButton onSelect={() => handleSelect("2019")}>
+            <TabButton onSelect={() => handleSelect("firstTab")}>
               2019
             </TabButton>
-            <TabButton onSelect={() => handleSelect("2020")}>
+            <TabButton onSelect={() => handleSelect("secondTab")}>
               2020
             </TabButton>
-            <TabButton onSelect={() => handleSelect("2021")}>
+            <TabButton onSelect={() => handleSelect("thirdTab")}>
               2021
             </TabButton>
-            <TabButton onSelect={() => handleSelect("2022")}>
+            <TabButton onSelect={() => handleSelect("fourthTab")}>
               2022
             </TabButton>
           </menu>
           <div id="tab-content">
-            <h3>Headline</h3>
-            <p>Information</p>
+            <h3>{TAB_CONTENT[selectedYear].headline}</h3>
+            <p>{TAB_CONTENT[selectedYear].description}</p>
           </div>
         </section>
       </main>

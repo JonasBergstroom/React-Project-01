@@ -25,21 +25,21 @@ export const CORE_CONCEPTS = [
   },
 ];
 
-export const TAB_CONTENT = [
-  {
+export const TAB_CONTENT = {
+  firstTab: {
     headline: "Headline 1",
     description: "Description 1",
   },
-  {
+  secondTab: {
     headline: "Headline 2",
     description: "Description 2",
   },
-  {
+  thirdTab: {
     headline: "Headline 3",
     description: "Description 3",
   },
-  {
+  fourthTab: {
     headline: "Headline 4",
     description: "Description 4",
   },
-];
+};
