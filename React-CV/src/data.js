@@ -24,3 +24,22 @@ export const CORE_CONCEPTS = [
     description: "iOS Developer",
   },
 ];
+
+export const TAB_CONTENT = [
+  {
+    headline: "Headline 1",
+    description: "Description 1",
+  },
+  {
+    headline: "Headline 2",
+    description: "Description 2",
+  },
+  {
+    headline: "Headline 3",
+    description: "Description 3",
+  },
+  {
+    headline: "Headline 4",
+    description: "Description 4",
+  },
+];
