@@ -41,7 +41,9 @@ function App() {
           </menu>
           <div id="tab-content">
             <h3>{TAB_CONTENT[selectedYear].headline}</h3>
-            <p>{TAB_CONTENT[selectedYear].description}</p>
+            <p style={{ whiteSpace: "pre-line" }}>
+              {TAB_CONTENT[selectedYear].description}
+            </p>
           </div>
         </section>
       </main>
